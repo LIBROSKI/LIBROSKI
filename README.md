@@ -2,9 +2,9 @@
 
 - 🔭 I’m currently working on [City 4AS (FiveM server)](https://discord.gg/PdVer38ayX)
 
-- 🌱 I’m currently learning **C#, JS, Lua**
-
 - 👯 I’m looking to collaborate on [Living City (Game in Unity 3D)](https://discord.gg/eGh8zHrCM8)
+
+- 🌱 I’m currently learning **C#, JS, Lua**
 
 - 👨‍💻 All of my projects are available at [not.yet](not.yet)
 
