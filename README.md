@@ -1,4 +1,4 @@
-<h3 align="center">A passionate frontend developer from Poland</h3>
+<h3 align="center">Amateur frontend developer from Poland</h3>
 
 - 🔭 I’m currently working on [City 4AS (FiveM server)](https://discord.gg/PdVer38ayX)
 
