@@ -1,14 +1,8 @@
 <h3 align="center">Amateur frontend developer from Poland</h3>
 
-- 🔭 I’m currently working on [City 4AS (FiveM server)](https://discord.gg/PdVer38ayX)
-
-- 👯 I’m looking to collaborate on [Living City (Game in Unity 3D)](https://discord.gg/eGh8zHrCM8)
-
 - 🌱 I’m currently learning **C#, JS, Lua**
 
-- 👨‍💻 All of my projects are available at [not.yet](not.yet)
-
-- 💬 Ask me about **HTML5, CSS**
+- 👨‍💻 All of my projects are available at [my docs](https://libroscy-dev.gitbook.io/libroscy.dev/)
 
 - 📫 How to reach me on discord **L!BR0$K!#6864**
 
