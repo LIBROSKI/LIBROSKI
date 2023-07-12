@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pasek postępu</title>
+</head>
+<link rel="stylesheet" href="assets/style.css">
+<body>
+
+    <script>
+function createProgressBar(totalLength, fillLength) {
+  const progressBar = document.createElement('p');
+  let progress = '';
+
+  // Tworzenie paska postępu na podstawie znaków specjalnych czcionki FiraCode
+  for (let i = 0; i < totalLength; i++) {
+    if (i === 0) {
+      progress += '\u{EE00}'; // Pusta lewa część paska postępu
+    } else if (i === totalLength - 1) {
+      progress += '\u{EE02}'; // Pusta prawa część paska postępu
+    } else if (i <= fillLength) {
+      progress += '\u{EE03}'; // Pełna lewa część paska postępu
+    } else {
+      progress += '\u{EE05}'; // Pełna prawa część paska postępu
+    }
+  }
+
+  progressBar.innerHTML = progress;
+  document.body.appendChild(progressBar);
+
+  // Symulacja wypełniania paska postępu
+  const fillProgress = () => {
+    let currentFill = 0;
+    const interval = setInterval(() => {
+      if (currentFill >= fillLength) {
+        clearInterval(interval);
+      } else {
+        currentFill++;
+        progressBar.innerHTML = progress.replace(new RegExp('\u{E003}', 'gu'), '\u{E005}').substring(0, currentFill + 1) +
+          progress.substring(currentFill + 1); // Aktualizacja paska postępu
+      }
+    }, 1000); // Czas wypełniania pojedynczej części paska postępu (1 sekunda = 1000 ms)
+  };
+
+  fillProgress();
+}
+
+// Wywołanie funkcji createProgressBar z określoną długością paska i wypełnieniem
+createProgressBar(8, 5);
+
+    </script>
+</body>
+</html>

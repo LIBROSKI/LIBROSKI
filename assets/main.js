@@ -1,18 +1,59 @@
-const main = document.getElementById("content");
+var welcomeDiv = document.getElementById("welcome");
+var welcomeHeader = welcomeDiv.querySelector("h1");
+var containerDiv = document.getElementById("container");
+var text = "Hello World :)";
+var index = 0;
 
-WelcomeText();
+containerDiv.style.display = "none"; // Ukryj początkowo div "container"
 
-function WelcomeText() {
-    const text = `
-    _ Loading, please wait...
+welcomeDiv.style.opacity = "0"; // Ustaw początkową przezroczystość na 0
 
-    [ 2.20160524] sd 0:0:0:0:0ddbu22 [Ded] Assuming drive cache: write through
-    Valid path for Logical Volume.
+setTimeout(function() {
+  welcomeDiv.style.opacity = "1"; // Zwiększ przezroczystość do 1
+  welcomeDiv.style.display = "block"; // Wyświetl div
 
-    /lib/player: clean, 1704684/10121989 files, 3813438/7532544 blocks
-    Started:    Attempting to mount Dedware fuse mount.
-    See "systemctl status: "runDedware//fuse""
-    `
+  var typingInterval = setInterval(function() {
+    welcomeHeader.textContent += text[index];
 
-    main.innerHTML = text;
+    index++;
+    if (index >= text.length) {
+      clearInterval(typingInterval);
+
+      setTimeout(function() {
+        fadeOut(welcomeDiv); // Uruchom efekt zanikania po zakończeniu pisania
+      }, 600);
+    }
+  }, 200);
+}, 100);
+
+function fadeOut(element) {
+  var opacity = 1;
+  var fadeInterval = setInterval(function() {
+    opacity -= 0.1; // Zmniejsz przezroczystość o 0.1
+
+    if (opacity <= 0) {
+      clearInterval(fadeInterval);
+      element.style.display = "none"; // Ukryj div po zaniknięciu
+
+      containerDiv.style.opacity = "0"; // Ustaw początkową przezroczystość na 0
+      containerDiv.style.display = "flex"; // Wyświetl div "container"
+
+      fadeIn(containerDiv); // Uruchom efekt pojawiania się "container"
+    }
+
+    element.style.opacity = opacity;
+  }, 100);
+}
+
+function fadeIn(element) {
+  var opacity = 0;
+  var fadeInInterval = setInterval(function() {
+    opacity += 0.1; // Zwiększ przezroczystość o 0.1
+
+    if (opacity >= 1) {
+      clearInterval(fadeInInterval);
+    }
+
+    element.style.opacity = opacity;
+  }, 100);
 }
