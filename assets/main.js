@@ -36,7 +36,7 @@ function fadeOut(element) {
       element.style.display = "none"; // Ukryj div po zaniknięciu
 
       containerDiv.style.opacity = "0"; // Ustaw początkową przezroczystość na 0
-      containerDiv.style.display = "flex"; // Wyświetl div "container"
+      containerDiv.style.display = "block"; // Wyświetl div "container"
 
       fadeIn(containerDiv); // Uruchom efekt pojawiania się "container"
     }

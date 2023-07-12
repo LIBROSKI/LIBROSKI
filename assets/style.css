@@ -10,6 +10,7 @@ code { font-family: 'Fira Code', monospace; }
 
 body {
     background-color: #111;
+    margin: 0;
 }
 
 * {
@@ -21,7 +22,7 @@ a {
 }
 
 #container {
-    padding: 50px;
+    padding: 2.5% 15%;
 }
 
 .p-ico {
@@ -36,4 +37,26 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.2s;
+}
+
+.projects a:hover i {
+    display: inline !important;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+footer {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
