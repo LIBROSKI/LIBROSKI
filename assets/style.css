@@ -43,6 +43,11 @@ a {
     display: inline !important;
 }
 
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact {
     text-align: center;
 }
