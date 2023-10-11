@@ -2,66 +2,29 @@
 @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
 /* Specify in CSS */
-code { font-family: 'Fira Code', monospace; }
-
-@supports (font-variation-settings: normal) {
-    * {font-family: 'Fira Code VF', monospace; }
-}
+* { font-family: 'Fira Code', monospace; }
 
 body {
-    background-color: #111;
     margin: 0;
 }
 
-* {
+#console {
+    background-color: black;
+    width: 99vw;
+    height: 95vh;
+}
+
+#console-input {
+    background-color: black;
+    width: 99vw;
+    height: 4vh;
+    resize: none;
+    border-radius: 0;
+    border: none;
+    font-family: 'Fira Code', monospace;
     color: #fff;
 }
 
-a {
-    text-decoration: none;
-}
-
-#container {
-    padding: 2.5% 15%;
-}
-
-.p-ico {
-    position: absolute;
-    top: 15%;
-    right: 5%;
-}
-
-#welcome {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.2s;
-}
-
-.projects a:hover i {
-    display: inline !important;
-}
-
-.projects-grid {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact {
-    text-align: center;
-}
-
-.contact-methods {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-}
-
-footer {
-    background-color: #333;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#console-input:focus {
+    border: none;
 }
