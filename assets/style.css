@@ -4,25 +4,71 @@
 /* Specify in CSS */
 * { font-family: 'Fira Code', monospace; }
 
+body[theme="dark"] {
+    --p-text: #12a9ae;
+    --s-text: #019d76;
+    --p-background: #111519;
+    --s-background: #1b2228;
+    --b-background: #47777d;
+    --t-background: #222931;
+}
+
 body {
     margin: 0;
+    background-color: var(--p-background);
+}
+
+#container {
+    width: 60vw;
+    height: 75vh;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: var(--s-background);
+    border-radius: 1vw;
+}
+
+#tool-bar {
+    width: 100% - 10px;
+    height: 4.5vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--t-background);
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+}
+
+#tool-bar button {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--b-background);
+    border: none;
+}
+
+#container-footer {
+    background-color: var(--t-background);
+    width: 100%;
+    height: 3vh;
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
 }
 
 #console {
-    background-color: black;
-    width: 99vw;
-    height: 95vh;
+    height: 65.5vh;
 }
 
 #console-input {
-    background-color: black;
-    width: 99vw;
-    height: 4vh;
-    resize: none;
-    border-radius: 0;
+    width: 99%;
     border: none;
-    font-family: 'Fira Code', monospace;
-    color: #fff;
+    padding: 0.5%;
 }
 
 #console-input:focus {
