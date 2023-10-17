@@ -24,6 +24,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
     width: 250px;
     height: 100vh;
     background-color: var(--s-background);
@@ -33,4 +34,30 @@ nav img {
     width: 175px;
     background-color: var(--b-background);
     border-radius: 50%;
+}
+
+nav a {
+    color: #019d7673;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: var(--s-text);
+}
+
+#container {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--p-text);
+}
+
+p {
+    color: var(--s-text);
 }
