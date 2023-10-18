@@ -144,3 +144,55 @@ p {
 .about-link:hover {
     color: var(--s-text);
 }
+
+#mini-popup {
+    width: 300px;
+    height: 200px;
+    background-color: var(--s-background);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    padding: 15px;
+    border: 3px solid var(--s-text);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mini-popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#mini-popup-icon {
+    color: var(--s-text);
+    font-size: 72px;
+}
+
+#mini-popup-text {
+    width: 185px;
+    color: var(--p-text);
+}
+
+.mini-popup-btn {
+    padding: 7.5px 15px;
+    color: var(--p-text);
+    background-color: var(--s-background);
+    border-radius: 10px;
+    border: 2.5px solid var(--s-text);
+    font-weight: 550;
+    transition: all 0.1s
+}
+
+.mini-popup-btn:hover {
+    border: 2.5px solid var(--s-text);
+    color: var(--p-background);
+    background-color: var(--s-text);
+    cursor: pointer;
+}

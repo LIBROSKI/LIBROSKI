@@ -4,6 +4,8 @@ const fullPopUpContainer = document.getElementById("overlay-container");
 const fullPopUpText = document.getElementById("overlay-value");
 const fullPopUpIcon = document.getElementById("overlay-icon");
 
+const cookiePopUp = document.getElementById("mini-popup");
+
 function PopUp(value, iconName) {
         fullPopUpContainer.style.display = "flex";
         fullPopUpText.innerText = value;
@@ -22,12 +24,23 @@ window.onload = (event) => {
 
         `;
     }
+    if (localStorage.getItem("cookie-clicked") !== "true") {
+        cookiePopUp.style.display = "flex";
+    }
+    else {
+        cookiePopUp.style.display = "none";
+    }
 };
 
 function CloseLangPopUp() {
-    localStorage.setItem("lang-clicked", "true")
+    localStorage.setItem("lang-clicked", "true");
     SetPageAbout()
     fullPopUpContainer.style.display = "none";
+}
+
+function CookieAccept() {
+    localStorage.setItem("cookie-clicked", "true");
+    cookiePopUp.style.display = "none";
 }
 
 function SetPageAbout() {
