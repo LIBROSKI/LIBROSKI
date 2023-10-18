@@ -47,6 +47,17 @@ nav a:hover {
     cursor: pointer;
 }
 
+a {
+    color: #019d7673;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--s-text);
+    cursor: pointer;
+}
+
+
 #container {
     padding: 25px;
     display: flex;
@@ -59,8 +70,20 @@ h1 {
     color: var(--p-text);
 }
 
+h2 {
+    color: var(--p-text);
+}
+
+li {
+    color: var(--s-text);
+    list-style: decimal;
+    font-size: 18px;
+}
+
 p {
     color: var(--s-text);
+    margin-block-start: 0;
+    max-width: 50vw;
 }
 
 #overlay-container {
@@ -105,4 +128,19 @@ p {
     color: var(--p-background);
     background-color: var(--s-text);
     cursor: pointer;
+}
+
+#about-link-container {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.about-link {
+    color: var(--p-text);
+    font-size: 48px;
+}
+
+.about-link:hover {
+    color: var(--s-text);
 }
