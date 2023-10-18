@@ -11,6 +11,30 @@ function SetPageAbout() {
     `;
 }
 
+function SetPageExperience() {
+    dataContainer.innerHTML = 
+    `
+    <h1>Experience</h1>
+    <p>Lorem ipsum ipsum lorem florem lorem ipsum lorem</p>
+    `;
+}
+
+function SetPageSkills() {
+    dataContainer.innerHTML = 
+    `
+    <h1>Skills</h1>
+    <p>Lorem ipsum ipsum lorem florem lorem ipsum lorem</p>
+    `;
+}
+
+function SetPageAwards() {
+    dataContainer.innerHTML = 
+    `
+    <h1>Awards</h1>
+    <p>Lorem ipsum ipsum lorem florem lorem ipsum lorem</p>
+    `;
+}
+
 window.onload = (event) => {
     SetPageAbout();
     console.log(window.navigator.language);
