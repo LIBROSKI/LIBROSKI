@@ -62,3 +62,20 @@ h1 {
 p {
     color: var(--s-text);
 }
+
+#overlay-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    z-index: 2;
+    background-color: #019d76aa;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay-container h1 {
+    color: var(--t-background);
+}

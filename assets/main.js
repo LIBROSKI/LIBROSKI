@@ -3,6 +3,25 @@ const dataContainer = document.getElementById("container");
 const fullPopUpContainer = document.getElementById("overlay-container");
 const fullPopUpText = document.getElementById("overlay-value");
 
+function PopUp(value) {
+        fullPopUpContainer.style.display = "flex";
+        fullPopUpText.innerText = value;
+}
+
+// localStorage.setItem("", "")
+
+window.onload = (event) => {
+    SetPageAbout();
+    console.log(window.navigator.language);
+    if (window.navigator.language != "en-EN") {
+        PopUp("You are using non-standard language. This website was originally written in English.");
+        dataContainer.innerHTML = 
+        `
+
+        `;
+    }
+};
+
 function SetPageAbout() {
     dataContainer.innerHTML = 
     `
@@ -34,17 +53,3 @@ function SetPageAwards() {
     <p>Lorem ipsum ipsum lorem florem lorem ipsum lorem</p>
     `;
 }
-
-window.onload = (event) => {
-    SetPageAbout();
-    console.log(window.navigator.language);
-    if (window.navigator.language != "en-EN") {
-        PopUp("full", "You are using non-standard language. This website was originally written in English.");
-    }
-};
-
-function PupUp(type, value) {
-    console.log(type, value);
-}
-
-// localStorage.setItem("", "")
