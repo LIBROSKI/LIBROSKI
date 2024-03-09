@@ -5,65 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <style>
+        @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+        /* Specify in CSS */
+        * { font-family: 'Fira Code', monospace; }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-image: url('background.png');
-            background-size: cover;
+            background-color: #0b090a;
+            color: #fff;
         }
         canvas {
-            border: 2px solid #333;
-            background-image: url('snake_tile.png');
+            border: 2px solid #fd538f;
+            border-radius: 10px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        #score {
+            position: absolute;
+            top: 20vh;
+            left: 50%;
+            transform: translate(-50%);
+            width: auto;
         }
     </style>
 </head>
 <body>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
-
+    <canvas id="gameCanvas" width="420" height="420"></canvas>
+    <div id="score">Score: 0</div>
     <script>
         const canvas = document.getElementById('gameCanvas');
         const context = canvas.getContext('2d');
+        const scoreDisplay = document.getElementById('score');
         
         const grid = 20;
+        const spacing = 5;
+        const boxSize = grid + spacing;
+        const maxBoxesX = Math.floor(canvas.width / boxSize);
+        const maxBoxesY = Math.floor(canvas.height / boxSize);
+        
+        let score = 0;
+
         let snake = [
-            { x: 10 * grid, y: 10 * grid },
-            { x: 9 * grid, y: 10 * grid },
-            { x: 8 * grid, y: 10 * grid }
+            { x: 10 * boxSize, y: 10 * boxSize },
+            { x: 9 * boxSize, y: 10 * boxSize },
+            { x: 8 * boxSize, y: 10 * boxSize }
         ];
-        let food = { x: Math.floor(Math.random() * 20) * grid, y: Math.floor(Math.random() * 20) * grid };
-        let dx = grid;
+        let food = generateFoodLocation();
+        let dx = boxSize;
         let dy = 0;
         
+        function generateFoodLocation() {
+            const x = Math.floor(Math.random() * maxBoxesX) * boxSize;
+            const y = Math.floor(Math.random() * maxBoxesY) * boxSize;
+            return { x, y };
+        }
+        
         function drawSnake() {
-            snake.forEach(segment => {
-                const snakeSprite = new Image();
-                snakeSprite.src = 'snake_sprite.png';
-                context.drawImage(snakeSprite, segment.x, segment.y, grid, grid);
+            snake.forEach((segment, index) => {
+                if (index === 0) {
+                    context.fillStyle = '#fd538f';
+                    context.fillRect(segment.x, segment.y, boxSize - spacing, boxSize - spacing);
+                } else {
+                    context.fillStyle = '#a46078';
+                    context.fillRect(segment.x, segment.y, boxSize - spacing - 3, boxSize - spacing - 3);
+                }
             });
         }
         
         function drawFood() {
-            const foodSprite = new Image();
-            foodSprite.src = 'food_sprite.png';
-            context.drawImage(foodSprite, food.x, food.y, grid, grid);
+            context.fillStyle = '#ac023d';
+            context.fillRect(food.x, food.y, grid, grid);
         }
         
         function moveSnake() {
             const head = { x: snake[0].x + dx, y: snake[0].y + dy };
             snake.unshift(head);
             if (head.x === food.x && head.y === food.y) {
-                food = { x: Math.floor(Math.random() * 20) * grid, y: Math.floor(Math.random() * 20) * grid };
+                score += 1;
+                scoreDisplay.textContent = 'Score: ' + score;
+                food = generateFoodLocation();
             } else {
                 snake.pop();
             }
         }
         
         function clearCanvas() {
-            context.clearRect(0, 0, canvas.width, canvas.height);
-        }
+            context.fillStyle = '#0b090a';
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }        
         
         function draw() {
             clearCanvas();
@@ -91,15 +127,15 @@
         document.addEventListener('keydown', event => {
             if (event.key === 'ArrowUp' && dy === 0) {
                 dx = 0;
-                dy = -grid;
+                dy = -boxSize;
             } else if (event.key === 'ArrowDown' && dy === 0) {
                 dx = 0;
-                dy = grid;
+                dy = boxSize;
             } else if (event.key === 'ArrowLeft' && dx === 0) {
-                dx = -grid;
+                dx = -boxSize;
                 dy = 0;
             } else if (event.key === 'ArrowRight' && dx === 0) {
-                dx = grid;
+                dx = boxSize;
                 dy = 0;
             }
         });
