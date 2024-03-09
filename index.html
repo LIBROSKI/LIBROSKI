@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/d018ac103d.js" crossorigin="anonymous"></script>
 </head>
-<body theme="dark">
+<body data-theme="dark">
+    <a id="theme-sw" onclick="ChangeTheme();"><i class="fa-solid fa-moon"></i></a>
     <nav>
-        <img id="logo" src="assets/icons/dark.svg" alt="libroski logo">
+        <img id="logo" src="https://camo.githubusercontent.com/b9d23c058f8cf8b581dd81ba3d38c7b5ad9875db8ec65ccf42381ccb2752c7bc/68747470733a2f2f36342e6d656469612e74756d626c722e636f6d2f62343361323230383739343162346533646662376563313463643063613133382f74756d626c725f6f62743370627852646e3173716b6433336f315f3430302e676966" alt="libroski logo">
 
         <a onclick="SetPageAbout()">About</a>
         <a onclick="SetPageExperience()">Experience</a>
@@ -31,6 +32,7 @@
         </div>
         <button class="mini-popup-btn" onclick="CookieAccept()">Accept</button>
     </div>
+    <pre id="output"></pre>
     <script src="assets/main.js"></script>
 </body>
 </html>

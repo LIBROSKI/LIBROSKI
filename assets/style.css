@@ -4,19 +4,81 @@
 /* Specify in CSS */
 * { font-family: 'Fira Code', monospace; }
 
-body[theme="dark"] {
-    --p-text: #12a9ae;
-    --s-text: #019d76;
-    --p-background: #111519;
-    --s-background: #1b2228;
-    --b-background: #47777d;
-    --t-background: #222931;
+body {
+    --linearPrimarySecondary: linear-gradient(#fd538f, #66424e);
+    --linearPrimaryAccent: linear-gradient(#fd538f, #a46078);
+    --linearSecondaryAccent: linear-gradient(#66424e, #a46078);
+    --radialPrimarySecondary: radial-gradient(#fd538f, #66424e);
+    --radialPrimaryAccent: radial-gradient(#fd538f, #a46078);
+    --radialSecondaryAccent: radial-gradient(#66424e, #a46078);
+    
+}
+
+body[data-theme="light"] {
+    --text: #ac023d;
+    --background: #f6f4f5;
+    --primary: #ac023d;
+    --secondary: #bd99a5;
+    --accent: #9f5b73;
+}
+
+body[data-theme="dark"] {
+    --text: #fd538f;
+    --background: #0b090a;
+    --primary: #fd538f;
+    --secondary: #66424e;
+    --accent: #a46078;
 }
 
 body {
     margin: 0;
-    background-color: var(--p-background);
+    background-color: var(--background);
     display: flex;
+}
+
+*::selection {
+    color: var(--background);
+    background-color: var(--text);
+}
+
+@media only screen and (max-width: 768px) {
+    pre {
+        opacity: 0.2;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    pre {
+        opacity: 0.6;
+        top: 50%;
+        left: 80%;
+    }
+}
+
+#theme-sw {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--background);
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.35em;
+}
+
+pre {
+    position: fixed;
+    z-index: -1;
+    color: var(--text);
+    transform: translate(-50%, -50%);
+    user-select: none;
 }
 
 nav {
@@ -27,33 +89,33 @@ nav {
     gap: 25px;
     width: 250px;
     height: 100vh;
-    background-color: var(--s-background);
 }
 
 nav img {
     width: 175px;
-    background-color: var(--b-background);
+    background-color: var(--primary);
+    padding: 5px;
     border-radius: 50%;
 }
 
 nav a {
-    color: #019d7673;
+    color: var(--text);
     text-decoration: none;
     font-size: 25px;
 }
 
 nav a:hover {
-    color: var(--s-text);
+    color: var(--text);
     cursor: pointer;
 }
 
 a {
-    color: #019d7673;
+    color: var(--text);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--s-text);
+    color: var(--text);
     cursor: pointer;
 }
 
@@ -67,21 +129,21 @@ a:hover {
 }
 
 h1 {
-    color: var(--p-text);
+    color: var(--text);
 }
 
 h2 {
-    color: var(--p-text);
+    color: var(--text);
 }
 
 li {
-    color: var(--s-text);
+    color: var(--text);
     list-style: decimal;
     font-size: 18px;
 }
 
 p {
-    color: var(--s-text);
+    color: var(--text);
     margin-block-start: 0;
     max-width: 50vw;
 }
@@ -115,18 +177,18 @@ p {
 
 #overlay-btn {
     padding: 7.5px 15px;
-    color: var(--p-background);
-    background-color: var(--s-text);
+    color: var(--background);
+    background-color: var(--text);
     border-radius: 10px;
-    border: 2.5px solid var(--s-background);
+    border: 2.5px solid var(--background);
     font-weight: 550;
     transition: all 0.1s
 }
 
 #overlay-btn:hover {
-    border: 2.5px solid var(--s-background);
-    color: var(--p-background);
-    background-color: var(--s-text);
+    border: 2.5px solid var(--background);
+    color: var(--background);
+    background-color: var(--text);
     cursor: pointer;
 }
 
@@ -137,31 +199,31 @@ p {
 }
 
 .about-link {
-    color: var(--p-text);
+    color: var(--text);
     font-size: 48px;
 }
 
 .about-link:hover {
-    color: var(--s-text);
+    color: var(--text);
 }
 
 #mini-popup {
     width: 300px;
     height: 200px;
-    background-color: var(--s-background);
+    background-color: var(--background);
     border-radius: 10px;
     position: absolute;
     bottom: 25px;
     right: 25px;
     padding: 15px;
-    border: 3px solid var(--s-text);
+    border: 3px solid var(--text);
     display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#mini-popup-container {
+#mini-popucontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,29 +232,29 @@ p {
     width: 100%;
 }
 
-#mini-popup-icon {
-    color: var(--s-text);
+#mini-popuicon {
+    color: var(--text);
     font-size: 72px;
 }
 
-#mini-popup-text {
+#mini-poputext {
     width: 185px;
-    color: var(--p-text);
+    color: var(--text);
 }
 
-.mini-popup-btn {
+.mini-popubtn {
     padding: 7.5px 15px;
-    color: var(--p-text);
-    background-color: var(--s-background);
+    color: var(--text);
+    background-color: var(--background);
     border-radius: 10px;
-    border: 2.5px solid var(--s-text);
+    border: 2.5px solid var(--text);
     font-weight: 550;
     transition: all 0.1s
 }
 
-.mini-popup-btn:hover {
-    border: 2.5px solid var(--s-text);
-    color: var(--p-background);
-    background-color: var(--s-text);
+.mini-popubtn:hover {
+    border: 2.5px solid var(--text);
+    color: var(--background);
+    background-color: var(--text);
     cursor: pointer;
 }
