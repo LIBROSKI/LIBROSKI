@@ -162,7 +162,7 @@ p {
 }
 
 #overlay-container h1 {
-    color: var(--t-background);margin-block: 0;
+    color: var(--background);margin-block: 0;
     
 }
 
