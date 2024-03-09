@@ -156,7 +156,7 @@ p {
     gap: 15px;
     position: absolute;
     z-index: 2;
-    background-color: #019d76aa;
+    background: var(--radialPrimaryAccent);
     width: 100vw;
     height: 100vh;
 }
