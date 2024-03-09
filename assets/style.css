@@ -156,14 +156,15 @@ p {
     gap: 15px;
     position: absolute;
     z-index: 2;
-    background: var(--radialPrimaryAccent);
+    background: var(--accent);
+    opacity: 0.5;
     width: 100vw;
     height: 100vh;
 }
 
 #overlay-container h1 {
-    color: var(--background);margin-block: 0;
-    
+    color: var(--background);
+    margin-block: 0;
 }
 
 #overlay-value {
