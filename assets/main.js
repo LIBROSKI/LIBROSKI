@@ -1,46 +1,8 @@
 const dataContainer = document.getElementById("container");
 
-const fullPopUpContainer = document.getElementById("overlay-container");
-const fullPopUpText = document.getElementById("overlay-value");
-const fullPopUpIcon = document.getElementById("overlay-icon");
-
-const cookiePopUp = document.getElementById("mini-popup");
-
-function PopUp(value, iconName) {
-	fullPopUpContainer.style.display = "flex";
-	fullPopUpText.innerText = value;
-	fullPopUpIcon.src = `assets/icons/${iconName}.svg`;
-}
-
-// localStorage.setItem("", "")
-
 window.onload = (event) => {
 	SetPageAbout();
-	console.log(window.navigator.language);
-	if (window.navigator.language != "en-EN" && localStorage.getItem("lang-clicked") !== "true") {
-		PopUp("You are using non-standard language. This website was originally written in English.", "light");
-		dataContainer.innerHTML =
-			`
-
-        `;
-	}
-	if (localStorage.getItem("cookie-clicked") !== "true") {
-		cookiePopUp.style.display = "flex";
-	} else {
-		cookiePopUp.style.display = "none";
-	}
 };
-
-function CloseLangPopUp() {
-	localStorage.setItem("lang-clicked", "true");
-	SetPageAbout()
-	fullPopUpContainer.style.display = "none";
-}
-
-function CookieAccept() {
-	localStorage.setItem("cookie-clicked", "true");
-	cookiePopUp.style.display = "none";
-}
 
 function SetPageAbout() {
 	dataContainer.innerHTML =
