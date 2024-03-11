@@ -167,7 +167,7 @@ async function main() {
 			}
 		}
 
-		document.getElementById('output').innerText = output;
+		document.getElementById('output').innerText = output + 'This is not Three.js';
 
 		A += 0.05;
 		B += 0.05;
