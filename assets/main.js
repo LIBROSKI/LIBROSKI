@@ -60,8 +60,8 @@ function SetPageSkills() {
 }
 
 // cube
-const width = 44,
-	height = 44;
+const width = 40,
+	height = 40;
 const zBuffer = new Array(width * height).fill(0);
 const buffer = new Array(width * height).fill(' ');
 const backgroundASCIICode = ' ';
@@ -70,7 +70,7 @@ const incrementSpeed = 0.6;
 let A = 0,
 	B = 0,
 	C = 0;
-const K1 = 29;
+const K1 = 25;
 
 function usleep(usec) {
 	return new Promise(resolve => setTimeout(resolve, usec / 1000));
