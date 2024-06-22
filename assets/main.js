@@ -27,9 +27,6 @@ function SetPageExperience() {
     <h2>LIBROSCY.dev</h2>
     <p>A global discord server where beginner FiveM and front-end developers can find numerous guides on perfect UI quality in games and websites.</p>    
     <br>
-    <h2>Demos:</h2>
-    <a onclick="">Store website (front-end)</a>
-    <a onclick="">Admin panel (front-end)</a>
     `;
 }
 
