@@ -20,7 +20,7 @@
 - Developing FiveM server modifications
 
 ## 🌱 Projects
-- 🚗 Developing custom FiveM server
+- 🚗 Developing FiveM server
 - 💻 Creating Windows terminal application
 - 🔧 Working on custom event system for UnityEngine
 - 🪜 Creating extension for VSC for categorizing extensions
