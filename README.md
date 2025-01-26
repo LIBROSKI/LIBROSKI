@@ -18,9 +18,10 @@
 - Developing FiveM server modifications
 
 ## 🌱 Projects
-- 🎮 Working on Unity game projects
-- 💻 Frontend web applications
-- 🚗 FiveM server customizations
+- 🚗 Developing custom FiveM server
+- 💻 Creating Windows terminal application
+- 🔧 Working on custom event system for UnityEngine
+-  🗄 Creating extension for VSC for categorizing extensions
 
 ## 📫 Connect With Me
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](LIBROSKI)
