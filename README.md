@@ -1,66 +1,30 @@
-<h2 align="left">Op 👋! Tf uhtl pz <a href="https://libroski.github.io/LIBROSKI/">SPIYVZRP</a> huk P't h myvt Wvshuk</h2>
+# 👋 Hi, I'm LIBROSKI
+### Frontend Developer | Unity Enthusiast | FiveM Developer
 
-###
+## About Me
+🚀 Frontend developer passionate about creating engaging user experiences
+🎮 Unity game development enthusiast
+🔧 FiveM development & modding
 
-<div align="center">
-  <!-- <img src="https://github-readme-stats.vercel.app/api?username=LIBROSKI&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false" height="150" alt="stats graph"  /> -->
-  <img src="https://streak-stats.demolab.com?user=LIBROSKI&locale=en&mode=daily&theme=radical&hide_border=false&border_radius=5" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=LIBROSKI&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=radical&hide_border=false" height="150" alt="languages graph"  />
-</div>
+## 🛠 Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Game Dev:** Unity, C#
+- **Other:** FiveM, Lua
+- **Tools:** Git, VS Code, Figma, Blender
 
-###
+## 🔭 Current Focus
+- Building responsive web applications
+- Creating Unity game prototypes
+- Developing FiveM server modifications
 
-<a href="https://libroski.github.io/LIBROSKI/" target="_blank">
-<img align="right" height="150"  src="https://64.media.tumblr.com/b43a22087941b4e3dfb7ec14cd0ca138/tumblr_obt3pbxRdn1sqkd33o1_400.gif"  />
-</a>
+## 🌱 Projects
+- 🎮 Working on Unity game projects
+- 💻 Frontend web applications
+- 🚗 FiveM server customizations
 
-###
+## 📫 Connect With Me
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](LIBROSKI)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discordapp.com/users/494493824408616960)
 
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=html" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=css" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=js" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=lua" height="30" alt="lua logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=cs" height="30" alt="csharp logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=md" height="30" alt="markdown logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=vscode" height="30" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=visualstudio" height="30" alt="visualstudio logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=unity" height="30" alt="unity logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=blender" height="30" alt="blender logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=git" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mysql" height="30" alt="mysql logo"  />
-</div>
-
-###
-
-<div align="left">
-  <a href="https://www.twitch.tv/libroski" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="twitch logo"  />
-  </a>
-  <a href="https://discordlookup.com/user/494493824408616960" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
-  </a>
-</div>
-
-###
-
-<img src="https://raw.githubusercontent.com/LIBROSKI/LIBROSKI/output/snake.svg" alt="Snake animation" />
-
-###
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/LIBROSKI/count.svg?"  />
-</div>
-
-###
+## 📊 GitHub Stats
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=LIBROSKI&show_icons=true&theme=dark)
