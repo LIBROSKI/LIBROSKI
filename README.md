@@ -15,13 +15,15 @@
 ## 🔭 Current Focus
 - Building responsive web applications
 - Creating Unity game prototypes
+- Learning new technologies
+- Learning docker and kubernetes
 - Developing FiveM server modifications
 
 ## 🌱 Projects
 - 🚗 Developing custom FiveM server
 - 💻 Creating Windows terminal application
 - 🔧 Working on custom event system for UnityEngine
--  🗄 Creating extension for VSC for categorizing extensions
+- 🪜 Creating extension for VSC for categorizing extensions
 
 ## 📫 Connect With Me
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](LIBROSKI)
