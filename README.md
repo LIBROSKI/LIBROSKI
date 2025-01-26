@@ -27,4 +27,5 @@
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discordapp.com/users/494493824408616960)
 
 ## 📊 GitHub Stats
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=LIBROSKI&show_icons=true&theme=dark)
+![LIBROSKI's Stats](https://github-readme-stats.vercel.app/api?username=LIBROSKI&theme=material-palenight&show_icons=true&hide_border=true&count_private=true)
+![LIBROSKI's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LIBROSKI&theme=material-palenight&show_icons=true&hide_border=true&layout=compact)
